@@ -154,7 +154,7 @@
   font-family: 'IntegralCF';
   src: url('{{ "fonts/Fontspring-DEMO-integralcf-regular.otf" | asset_url }}') format('opentype');
   font-weight: 400;
-  font-display: swap;
+  font-display: block;
   font-style: normal;
 }
 
@@ -306,13 +306,16 @@ div.header__columns {
 }
 
 /* Custom Heading Font - IntegralCF */
-[style*="integral-cf"] {
+.text-block[style*="--font-family: integral-cf"],
+.text-block[style*="--font-family: integral-cf"] * {
     font-family: 'IntegralCF', sans-serif !important;
 }
 
-/* Handle CSS variable for integral-cf font */
-[style*="--font-family: integral-cf"],
-[style*="--font-family: integral-cf"] p {
+[style*="--font-family: integral-cf"] {
     --font-family: 'IntegralCF', sans-serif !important;
     font-family: 'IntegralCF', sans-serif !important;
+}
+
+[style*="--font-family: integral-cf"] * {
+    font-family: var(--font-family) !important;
 }
