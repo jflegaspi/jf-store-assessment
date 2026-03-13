@@ -359,7 +359,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h1>30,000+</h1>",
+                    "text": "<h2>30,000+</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
