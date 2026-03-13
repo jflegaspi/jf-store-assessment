@@ -1,0 +1,156 @@
+/**
+* @license
+*
+* Font Family: Satoshi
+* Designed by: Deni Anggara
+* URL: https://www.fontshare.com/fonts/satoshi
+* © 2026 Indian Type Foundry
+*
+* Satoshi Light 
+* Satoshi LightItalic 
+* Satoshi Regular 
+* Satoshi Italic 
+* Satoshi Medium 
+* Satoshi MediumItalic 
+* Satoshi Bold 
+* Satoshi BoldItalic 
+* Satoshi Black 
+* Satoshi BlackItalic 
+* Satoshi Variable (Variable font)
+* Satoshi VariableItalic (Variable font)
+*
+*/
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('{{ "fonts/Satoshi-Light.woff2" | asset_url }}') format('woff2'),
+       url('{{ "fonts/Satoshi-Light.woff" | asset_url }}') format('woff'),
+       url('{{ "fonts/Satoshi-Light.ttf" | asset_url }}') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('{{ "fonts/Satoshi-LightItalic.woff2" | asset_url }}') format('woff2'),
+       url('{{ "fonts/Satoshi-LightItalic.woff" | asset_url }}') format('woff'),
+       url('{{ "fonts/Satoshi-LightItalic.ttf" | asset_url }}') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('{{ "fonts/Satoshi-Regular.woff2" | asset_url }}') format('woff2'),
+       url('{{ "fonts/Satoshi-Regular.woff" | asset_url }}') format('woff'),
+       url('{{ "fonts/Satoshi-Regular.ttf" | asset_url }}') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('{{ "fonts/Satoshi-Italic.woff2" | asset_url }}') format('woff2'),
+       url('{{ "fonts/Satoshi-Italic.woff" | asset_url }}') format('woff'),
+       url('{{ "fonts/Satoshi-Italic.ttf" | asset_url }}') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('{{ "fonts/Satoshi-Medium.woff2" | asset_url }}') format('woff2'),
+       url('{{ "fonts/Satoshi-Medium.woff" | asset_url }}') format('woff'),
+       url('{{ "fonts/Satoshi-Medium.ttf" | asset_url }}') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('{{ "fonts/Satoshi-MediumItalic.woff2" | asset_url }}') format('woff2'),
+       url('{{ "fonts/Satoshi-MediumItalic.woff" | asset_url }}') format('woff'),
+       url('{{ "fonts/Satoshi-MediumItalic.ttf" | asset_url }}') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('{{ "fonts/Satoshi-Bold.woff2" | asset_url }}') format('woff2'),
+       url('{{ "fonts/Satoshi-Bold.woff" | asset_url }}') format('woff'),
+       url('{{ "fonts/Satoshi-Bold.ttf" | asset_url }}') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('{{ "fonts/Satoshi-BoldItalic.woff2" | asset_url }}') format('woff2'),
+       url('{{ "fonts/Satoshi-BoldItalic.woff" | asset_url }}') format('woff'),
+       url('{{ "fonts/Satoshi-BoldItalic.ttf" | asset_url }}') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('{{ "fonts/Satoshi-Black.woff2" | asset_url }}') format('woff2'),
+       url('{{ "fonts/Satoshi-Black.woff" | asset_url }}') format('woff'),
+       url('{{ "fonts/Satoshi-Black.ttf" | asset_url }}') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('{{ "fonts/Satoshi-BlackItalic.woff2" | asset_url }}') format('woff2'),
+       url('{{ "fonts/Satoshi-BlackItalic.woff" | asset_url }}') format('woff'),
+       url('{{ "fonts/Satoshi-BlackItalic.ttf" | asset_url }}') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+/**
+* Variable font - You can control variable axes with font-variation-settings
+* available axes: 'wght' (range from 300.0 to 900.0)
+*/
+@font-face {
+  font-family: 'Satoshi';
+  src: url('{{ "fonts/Satoshi-Variable.woff2" | asset_url }}') format('woff2'),
+       url('{{ "fonts/Satoshi-Variable.woff" | asset_url }}') format('woff'),
+       url('{{ "fonts/Satoshi-Variable.ttf" | asset_url }}') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* Variable font italic - You can control variable axes with font-variation-settings
+* available axes: 'wght' (range from 300.0 to 900.0)
+*/
+@font-face {
+  font-family: 'Satoshi';
+  src: url('{{ "fonts/Satoshi-VariableItalic.woff2" | asset_url }}') format('woff2'),
+       url('{{ "fonts/Satoshi-VariableItalic.woff" | asset_url }}') format('woff'),
+       url('{{ "fonts/Satoshi-VariableItalic.ttf" | asset_url }}') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+/* Body font */
+body {
+  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+}
