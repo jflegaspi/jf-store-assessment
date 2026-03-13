@@ -1,0 +1,73 @@
+/* Override font variables */
+:root {
+  --font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* Override custom-typography class */
+.custom-typography,
+.custom-typography > * {
+  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* Body font */
+html body,
+body {
+  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+div.header__columns {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    max-width: 1240px;
+    margin: auto;
+    width: 100%;
+}
+
+.header__column--right .search-form {
+    max-height: 48px;
+    max-width: 577px;
+    width: 100%;
+}
+
+.header__column--right .search-form .search-form__input-wrapper {
+    border-radius: 50px;
+    border: 0;
+    background: #F0F0F0;
+}
+
+.header__column--right .search-form .search-form__input-wrapper .search-form__input {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.4);
+    padding-left: 13px;
+}
+
+.header__column--right .search-form .search-form__input-wrapper .svg-wrapper {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* Handle menu gap overflow - prevent items from overflowing */
+.menu-list {
+    --menu-horizontal-gap: clamp(0.5rem, var(--menu-horizontal-gap), 2rem) !important;
+}
+
+/* Ensure overflow menu adjusts properly */
+.overflow-menu::part(list) {
+    gap: var(--menu-horizontal-gap) !important;
+    margin-inline: calc(-1 * (var(--menu-horizontal-gap) / 2)) !important;
+}
+
+/* Custom Heading Font - IntegralCF */
+.text-block[style*="--font-family: integral-cf"],
+.text-block[style*="--font-family: integral-cf"] * {
+    font-family: 'IntegralCF', sans-serif !important;
+}
+
+[style*="--font-family: integral-cf"] {
+    --font-family: 'IntegralCF', sans-serif !important;
+    font-family: 'IntegralCF', sans-serif !important;
+}
+
+[style*="--font-family: integral-cf"] * {
+    font-family: var(--font-family) !important;
+}
