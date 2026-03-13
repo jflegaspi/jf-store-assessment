@@ -1,0 +1,109 @@
+{%- doc -%}
+  Renders a permanent search input field for the header.
+
+  @param {string} [placeholder] - Placeholder text for the search input.
+  @param {string} [class] - Additional CSS classes for the search form.
+
+  @example
+  {% render 'search-input', placeholder: 'Search products...', class: 'custom-class' %}
+{%- enddoc -%}
+
+<search-form class="search-form{% if class != blank %} {{ class | strip }}{% endif %}">
+  <form action="{{ routes.search_url }}" method="get" class="search-form__wrapper">
+    <div class="search-form__input-wrapper">
+      <input
+        class="search-form__input"
+        type="search"
+        name="q"
+        placeholder="{{ placeholder | default: 'content.search' | t }}"
+        aria-label="{{ 'content.search_input_label' | t }}"
+        value="{{ search.terms | escape }}"
+      >
+      <button
+        type="submit"
+        class="search-form__button button-unstyled"
+        aria-label="{{ 'content.search' | t }}"
+      >
+        <span class="svg-wrapper">
+          {{ 'icon-search.svg' | inline_asset_content }}
+        </span>
+      </button>
+    </div>
+  </form>
+</search-form>
+
+{% stylesheet %}
+  .search-form {
+    --search-border-radius: var(--style-border-radius-inputs);
+    --search-border-width: var(--style-border-width-inputs);
+
+    display: flex;
+  }
+
+  .search-form__wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  .search-form__input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: var(--search-border-width) solid var(--color-border);
+    border-radius: var(--search-border-radius);
+    background-color: var(--color-background);
+    padding: 0 var(--padding-sm);
+  }
+
+  .search-form__input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    background-color: transparent;
+    padding: var(--padding-sm) 0;
+    font-size: var(--font-size-base);
+    color: var(--color-foreground);
+    outline: none;
+
+    &::placeholder {
+      color: var(--color-foreground-dimmed);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .search-form__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--padding-xs);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-foreground);
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  .search-form__button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .search-form {
+      width: 100%;
+    }
+
+    .search-form__input {
+      font-size: 16px;
+    }
+  }
+{% endstylesheet %}
