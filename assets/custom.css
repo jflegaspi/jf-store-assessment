@@ -78,3 +78,8 @@ div.header__columns {
 [style*="--font-family: integral-cf"] * {
     font-family: 'IntegralCF', sans-serif !important;
 }
+
+.header__columns {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

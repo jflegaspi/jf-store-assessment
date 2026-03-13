@@ -100,6 +100,48 @@
       "unit": "%",
       "default": 100,
       "visible_if": "{{ block.settings.width_mobile == \"custom\" }}"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "select",
+      "id": "padding_type",
+      "label": "Padding",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "custom",
+          "label": "Custom"
+        }
+      ],
+      "default": "default"
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "label": "Vertical Padding",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 12,
+      "visible_if": "{{ block.settings.padding_type == \"custom\" }}"
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "label": "Horizontal Padding",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 20,
+      "visible_if": "{{ block.settings.padding_type == \"custom\" }}"
     }
   ],
   "presets": [

@@ -22,7 +22,12 @@
     {{ block_settings.style_class }}
     {{ block_settings.style_class }}--{{ block.id }}
   "
-  style="{% render 'size-style', settings: block_settings %}"
+  style="
+    {% render 'size-style', settings: block_settings %}
+    {% if block_settings.padding_type == 'custom' %}
+      padding: {{ block_settings.padding_vertical }}px {{ block_settings.padding_horizontal }}px !important;
+    {% endif %}
+  "
   {%- if block_settings.open_in_new_tab -%}
     target="_blank"
     rel="noopener noreferrer"
@@ -31,7 +36,6 @@
 >
   {{ block_settings.label }}
 </a>
-
 {% stylesheet %}
   .link {
     text-decoration: none;
