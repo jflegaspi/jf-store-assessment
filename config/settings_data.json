@@ -237,12 +237,12 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#333333",
+          "background": "#000000",
           "foreground_heading": "#ffffff",
           "foreground": "#ffffff",
           "primary": "#ffffff",
           "primary_hover": "#ffffffb0",
-          "border": "#ffffffb0",
+          "border": "#000000",
           "shadow": "#000000",
           "primary_button_background": "#ffffff",
           "primary_button_text": "#000000",
