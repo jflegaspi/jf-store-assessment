@@ -11,6 +11,9 @@
 <search-form class="search-form{% if class != blank %} {{ class | strip }}{% endif %}">
   <form action="{{ routes.search_url }}" method="get" class="search-form__wrapper">
     <div class="search-form__input-wrapper">
+        <span class="svg-wrapper">
+            {{ 'icon-search.svg' | inline_asset_content }}
+        </span>
       <input
         class="search-form__input"
         type="search"
@@ -19,7 +22,7 @@
         aria-label="{{ 'content.search_input_label' | t }}"
         value="{{ search.terms | escape }}"
       >
-      <button
+      {% comment %} <button
         type="submit"
         class="search-form__button button-unstyled"
         aria-label="{{ 'content.search' | t }}"
@@ -27,7 +30,7 @@
         <span class="svg-wrapper">
           {{ 'icon-search.svg' | inline_asset_content }}
         </span>
-      </button>
+      </button> {% endcomment %}
     </div>
   </form>
 </search-form>
