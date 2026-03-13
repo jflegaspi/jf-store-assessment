@@ -311,7 +311,8 @@ div.header__columns {
 }
 
 /* Handle CSS variable for integral-cf font */
-[style*="--font-family: integral-cf"] {
-    --font-family: 'IntegralCF', sans-serif;
+[style*="--font-family: integral-cf"],
+[style*="--font-family: integral-cf"] p {
+    --font-family: 'IntegralCF', sans-serif !important;
     font-family: 'IntegralCF', sans-serif !important;
 }
