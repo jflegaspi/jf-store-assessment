@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>FIND CLOTHES THAT MATCHES YOUR STYLE</p>",
+            "text": "<p><strong>FIND CLOTHES THAT MATCHES YOUR STYLE</strong></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
