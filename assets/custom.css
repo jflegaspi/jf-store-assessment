@@ -309,3 +309,9 @@ div.header__columns {
 [style*="integral-cf"] {
     font-family: 'IntegralCF', sans-serif !important;
 }
+
+/* Handle CSS variable for integral-cf font */
+[style*="--font-family: integral-cf"] {
+    --font-family: 'IntegralCF', sans-serif;
+    font-family: 'IntegralCF', sans-serif !important;
+}
