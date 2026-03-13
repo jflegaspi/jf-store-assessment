@@ -594,7 +594,7 @@
     z-index: var(--layer-flat);
     width: 100%;
     align-self: var(--content-wrapper-alignment, flex-start) !important;
-    max-width: var(--content-wrapper-width) !important;
+    max-width: var(--content-wrapper-width, auto) !important;
   }
 
   .hero__content-wrapper .group-block-content {
@@ -1303,8 +1303,8 @@
       "id": "padding-block-start",
       "label": "t:settings.top",
       "min": 0,
-      "max": 100,
-      "step": 1,
+      "max": 200,
+      "step": 2,
       "unit": "px",
       "default": 0
     },
@@ -1312,9 +1312,10 @@
       "type": "range",
       "id": "padding-block-end",
       "label": "t:settings.bottom",
+    
       "min": 0,
-      "max": 100,
-      "step": 1,
+      "max": 200,
+      "step": 2,
       "unit": "px",
       "default": 0
     }
