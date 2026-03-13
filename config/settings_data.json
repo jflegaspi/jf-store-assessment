@@ -81,7 +81,7 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "rgba(0,0,0,0)",
+          "background": "#ffffff",
           "foreground_heading": "#000000",
           "foreground": "#000000",
           "primary": "#000000",
