@@ -5,7 +5,11 @@
      menu_type {string}: 'drawer' or 'mega_menu'
 {%- endcomment -%}
 
---menu-top-level-font-family: var(--font-{{ settings.type_font_primary_link }}--family);
+{% if settings.type_font_primary_link == 'satoshi' %}
+  --menu-top-level-font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+{% else %}
+  --menu-top-level-font-family: var(--font-{{ settings.type_font_primary_link }}--family);
+{% endif %}
 --menu-top-level-font-size-desktop: {{ settings.type_font_primary_size }}; --menu-top-level-font-style: var(--font-
 {{- settings.type_font_primary_link -}}
 --style); --menu-top-level-font-weight: var(--font-
