@@ -304,3 +304,8 @@ div.header__columns {
     gap: var(--menu-horizontal-gap) !important;
     margin-inline: calc(-1 * (var(--menu-horizontal-gap) / 2)) !important;
 }
+
+/* Custom Heading Font - IntegralCF */
+[style*="integral-cf"] {
+    font-family: 'IntegralCF', sans-serif !important;
+}
