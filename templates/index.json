@@ -75,7 +75,10 @@
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "custom",
-            "custom_width_mobile": 100
+            "custom_width_mobile": 100,
+            "padding_type": "custom",
+            "padding_vertical": 16,
+            "padding_horizontal": 68
           },
           "blocks": {}
         },
