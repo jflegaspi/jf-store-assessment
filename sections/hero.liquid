@@ -592,8 +592,9 @@
     position: relative;
     inset: 0;
     z-index: var(--layer-flat);
-    width: var(--content-wrapper-width, auto);
-    align-self: var(--content-wrapper-alignment, flex-start);
+    width: 100%;
+    align-self: var(--content-wrapper-alignment, flex-start) !important;
+    max-width: var(--content-wrapper-width, auto) !important;
   }
 
   .hero__content-wrapper .group-block-content {
