@@ -185,6 +185,10 @@
   .header__underlay {
     --color-submenu: rgb({{ block_settings.color_scheme.settings.background.rgba }});
   }
+  
+  .menu-list {
+    --menu-horizontal-gap: {{ block_settings.menu_gap }}px;
+  }
 {% endstyle %}
 {% stylesheet %}
   .header__drawer {
@@ -780,6 +784,16 @@
         }
       ],
       "default": "none"
+    },
+    {
+      "type": "range",
+      "id": "menu_gap",
+      "label": "t:settings.gap",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 32
     },
     {
       "type": "header",
