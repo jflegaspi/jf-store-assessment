@@ -40,3 +40,136 @@
   >
 {%- endunless -%}
 {% # theme-check-enable %}
+
+<!-- Custom Fonts -->
+<style>
+  /* Satoshi Font Family */
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('{{ "fonts/Satoshi-Light.woff2" | asset_url }}') format('woff2'),
+         url('{{ "fonts/Satoshi-Light.woff" | asset_url }}') format('woff'),
+         url('{{ "fonts/Satoshi-Light.ttf" | asset_url }}') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('{{ "fonts/Satoshi-LightItalic.woff2" | asset_url }}') format('woff2'),
+         url('{{ "fonts/Satoshi-LightItalic.woff" | asset_url }}') format('woff'),
+         url('{{ "fonts/Satoshi-LightItalic.ttf" | asset_url }}') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('{{ "fonts/Satoshi-Regular.woff2" | asset_url }}') format('woff2'),
+         url('{{ "fonts/Satoshi-Regular.woff" | asset_url }}') format('woff'),
+         url('{{ "fonts/Satoshi-Regular.ttf" | asset_url }}') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('{{ "fonts/Satoshi-Italic.woff2" | asset_url }}') format('woff2'),
+         url('{{ "fonts/Satoshi-Italic.woff" | asset_url }}') format('woff'),
+         url('{{ "fonts/Satoshi-Italic.ttf" | asset_url }}') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('{{ "fonts/Satoshi-Medium.woff2" | asset_url }}') format('woff2'),
+         url('{{ "fonts/Satoshi-Medium.woff" | asset_url }}') format('woff'),
+         url('{{ "fonts/Satoshi-Medium.ttf" | asset_url }}') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('{{ "fonts/Satoshi-MediumItalic.woff2" | asset_url }}') format('woff2'),
+         url('{{ "fonts/Satoshi-MediumItalic.woff" | asset_url }}') format('woff'),
+         url('{{ "fonts/Satoshi-MediumItalic.ttf" | asset_url }}') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('{{ "fonts/Satoshi-Bold.woff2" | asset_url }}') format('woff2'),
+         url('{{ "fonts/Satoshi-Bold.woff" | asset_url }}') format('woff'),
+         url('{{ "fonts/Satoshi-Bold.ttf" | asset_url }}') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('{{ "fonts/Satoshi-BoldItalic.woff2" | asset_url }}') format('woff2'),
+         url('{{ "fonts/Satoshi-BoldItalic.woff" | asset_url }}') format('woff'),
+         url('{{ "fonts/Satoshi-BoldItalic.ttf" | asset_url }}') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('{{ "fonts/Satoshi-Black.woff2" | asset_url }}') format('woff2'),
+         url('{{ "fonts/Satoshi-Black.woff" | asset_url }}') format('woff'),
+         url('{{ "fonts/Satoshi-Black.ttf" | asset_url }}') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('{{ "fonts/Satoshi-BlackItalic.woff2" | asset_url }}') format('woff2'),
+         url('{{ "fonts/Satoshi-BlackItalic.woff" | asset_url }}') format('woff'),
+         url('{{ "fonts/Satoshi-BlackItalic.ttf" | asset_url }}') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('{{ "fonts/Satoshi-Variable.woff2" | asset_url }}') format('woff2'),
+         url('{{ "fonts/Satoshi-Variable.woff" | asset_url }}') format('woff'),
+         url('{{ "fonts/Satoshi-Variable.ttf" | asset_url }}') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('{{ "fonts/Satoshi-VariableItalic.woff2" | asset_url }}') format('woff2'),
+         url('{{ "fonts/Satoshi-VariableItalic.woff" | asset_url }}') format('woff'),
+         url('{{ "fonts/Satoshi-VariableItalic.ttf" | asset_url }}') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: italic;
+  }
+
+  /* ArchivoBlack Font */
+  @font-face {
+    font-family: 'ArchivoBlack';
+    src: url('{{ "fonts/ArchivoBlack-Regular.ttf" | asset_url }}') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+  }
+</style>

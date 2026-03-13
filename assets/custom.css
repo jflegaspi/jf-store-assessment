@@ -58,16 +58,23 @@ div.header__columns {
 }
 
 /* Custom Heading Font - ArchivoBlack */
+.text-block[style*="archivo-black"] {
+    font-family: 'ArchivoBlack', sans-serif !important;
+}
+
+.text-block[style*="archivo-black"] * {
+    font-family: 'ArchivoBlack', sans-serif !important;
+}
+
 .text-block[style*="--font-family: archivo-black"],
 .text-block[style*="--font-family: archivo-black"] * {
     font-family: 'ArchivoBlack', sans-serif !important;
 }
 
 [style*="--font-family: archivo-black"] {
-    --font-family: 'ArchivoBlack', sans-serif !important;
     font-family: 'ArchivoBlack', sans-serif !important;
 }
 
 [style*="--font-family: archivo-black"] * {
-    font-family: var(--font-family) !important;
+    font-family: 'ArchivoBlack', sans-serif !important;
 }
