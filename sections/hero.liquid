@@ -532,7 +532,17 @@
         {{section.settings.section_width}}
         {% if request.design_mode %}hero__content-wrapper--design-mode{% endif %}
       "
-      style="{% render 'layout-panel-style', settings: section.settings %}"
+      style="
+        {% render 'layout-panel-style', settings: section.settings %}
+        {% if section.settings.content_width_type == 'percentage' %}
+          --content-wrapper-width: {{ section.settings.content_width_percentage }}%;
+        {% elsif section.settings.content_width_type == 'pixels' %}
+          --content-wrapper-width: {{ section.settings.content_width_pixels }}px;
+        {% else %}
+          --content-wrapper-width: auto;
+        {% endif %}
+        --content-wrapper-alignment: {{ section.settings.content_width_alignment }};
+      "
     >
       {% content_for 'blocks' %}
     </div>
@@ -582,6 +592,8 @@
     position: relative;
     inset: 0;
     z-index: var(--layer-flat);
+    width: var(--content-wrapper-width, auto);
+    align-self: var(--content-wrapper-alignment, flex-start);
   }
 
   .hero__content-wrapper .group-block-content {
@@ -1095,6 +1107,72 @@
         }
       ],
       "default": "page-width"
+    },
+    {
+      "type": "header",
+      "content": "Content Width"
+    },
+    {
+      "type": "select",
+      "id": "content_width_type",
+      "label": "Content Wrapper Width",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Auto"
+        },
+        {
+          "value": "percentage",
+          "label": "Percentage"
+        },
+        {
+          "value": "pixels",
+          "label": "Pixels"
+        }
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "range",
+      "id": "content_width_percentage",
+      "label": "Width (%)",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100,
+      "visible_if": "{{ section.settings.content_width_type == 'percentage' }}"
+    },
+    {
+      "type": "range",
+      "id": "content_width_pixels",
+      "label": "Width (px)",
+      "min": 200,
+      "max": 1200,
+      "step": 10,
+      "unit": "px",
+      "default": 600,
+      "visible_if": "{{ section.settings.content_width_type == 'pixels' }}"
+    },
+    {
+      "type": "select",
+      "id": "content_width_alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "flex-start"
     },
     {
       "type": "select",
