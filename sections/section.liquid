@@ -4,7 +4,7 @@
   {% content_for 'blocks' %}
 {% endcapture %}
 
-{% render 'section', section: section, children: children %}
+{% render 'section', section: section, children: children, custom_class: section.settings.custom_class %}
 
 {% schema %}
 {
@@ -418,6 +418,16 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Advanced"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom CSS Class",
+      "placeholder": "e.g. my-custom-class"
     }
   ],
   "presets": [
