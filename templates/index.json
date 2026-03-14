@@ -1406,7 +1406,12 @@
       ],
       "name": "t:names.collections_bento",
       "settings": {
-        "collection_list": [],
+        "collection_list": [
+          "casual",
+          "formal",
+          "party",
+          "gym"
+        ],
         "layout_type": "bento",
         "carousel_on_mobile": false,
         "columns": 4,
