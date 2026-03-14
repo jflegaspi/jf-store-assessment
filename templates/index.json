@@ -853,7 +853,8 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 42,
-        "padding-block-end": 42
+        "padding-block-end": 42,
+        "custom_class": "icon-column"
       }
     },
     "product_list_fa6P9H": {
