@@ -80,21 +80,25 @@ div.header__columns {
 }
 
 /* IntegralCF font styling */
-[style*="'IntegralCF'"] {
+[style*="'IntegralCF'"],
+[style*="integral-cf"] {
     font-family: 'IntegralCF', sans-serif !important;
     letter-spacing: -0.02em;
 }
 
-[style*="'IntegralCF'"] * {
+[style*="'IntegralCF'"] *,
+[style*="integral-cf"] * {
     font-family: 'IntegralCF', sans-serif !important;
 }
 
 /* Satoshi font styling */
-[style*="'Satoshi'"] {
+[style*="'Satoshi'"],
+[style*="satoshi"] {
     font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
 }
 
-[style*="'Satoshi'"] * {
+[style*="'Satoshi'"] *,
+[style*="satoshi"] * {
     font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
 }
 
