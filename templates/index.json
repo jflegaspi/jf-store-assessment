@@ -508,11 +508,11 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 10,
+            "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0,
-            "custom_class": ""
+            "custom_class": "home-icon-columns"
           },
           "blocks": {
             "image_NWhzyq": {
@@ -577,11 +577,11 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 10,
+            "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0,
-            "custom_class": ""
+            "custom_class": "home-icon-columns"
           },
           "blocks": {
             "image_bU33qN": {
@@ -646,11 +646,11 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 10,
+            "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0,
-            "custom_class": ""
+            "custom_class": "home-icon-columns"
           },
           "blocks": {
             "image_Qm9BPb": {
@@ -715,11 +715,11 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 10,
+            "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0,
-            "custom_class": ""
+            "custom_class": "home-icon-columns"
           },
           "blocks": {
             "image_BPzA4E": {
@@ -784,11 +784,11 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 10,
+            "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0,
-            "custom_class": ""
+            "custom_class": "home-icon-columns"
           },
           "blocks": {
             "image_LFkzj8": {
