@@ -1343,14 +1343,14 @@
           "settings": {
             "placement": "on_image",
             "horizontal_alignment": "flex-start",
-            "vertical_alignment": "flex-end",
+            "vertical_alignment": "flex-start",
             "collection_card_gap": 8,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_radius": 0
+            "border_radius": 20
           },
           "blocks": {
             "collection_title_wf68kY": {
