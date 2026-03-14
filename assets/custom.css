@@ -103,3 +103,8 @@ div.header__columns {
 .group-block.header-group:last-child {
     border-right: none;
 }
+
+.icon-column .section-content-wrapper {
+    max-width: 1240px;
+    margin: auto;
+}
