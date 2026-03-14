@@ -1067,7 +1067,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "View All",
-            "link": "shopify://collections/new-arrivals",
+            "link": "shopify://collections/top-selling",
             "open_in_new_tab": false,
             "style_class": "button-secondary",
             "width": "fit-content",
