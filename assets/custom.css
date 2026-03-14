@@ -79,6 +79,16 @@ div.header__columns {
     font-family: 'IntegralCF', sans-serif !important;
 }
 
+/* IntegralCF font styling */
+[style*="'IntegralCF'"] {
+    font-family: 'IntegralCF', sans-serif !important;
+    letter-spacing: -0.02em;
+}
+
+[style*="'IntegralCF'"] * {
+    font-family: 'IntegralCF', sans-serif !important;
+}
+
 .header__columns {
     padding-left: 0 !important;
     padding-right: 0 !important;
