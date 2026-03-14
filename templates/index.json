@@ -1242,7 +1242,7 @@
       ],
       "name": "Featured collection",
       "settings": {
-        "collection": "new-arrivals",
+        "collection": "top-selling",
         "layout_type": "grid",
         "carousel_on_mobile": true,
         "max_products": 4,
